@@ -1,0 +1,14 @@
+<% provide(:title, @issue.content) %>
+<div class="container">
+  
+  <p id="notice"><%= notice %></p>
+  
+  <div class="jumbotron">
+      <h1>User: <%= @issue.user_id %></h1>
+      <p>Issue: <%= @issue.content %></p>
+  </div>
+  
+  <%= link_to 'Show', @issue, class: "btn btn-primary"  %> |
+  <%= link_to 'Back', issues_path, class: "btn btn-primary" %>
+  
+</div>

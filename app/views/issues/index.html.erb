@@ -1,0 +1,38 @@
+<div class="container">
+    <p id="notice"><%= notice %></p>
+    <br/>
+    <h2 class="text-center">Listing Issues</h2>
+    <hr>
+    <%= link_to 'New Issue', new_issue_path, class: "btn btn-primary navbar-btn" %>
+    </br>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">Issues</div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Objet</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% @issues.each do |issue| %>
+                            <tr>
+                                <td><%= issue.content %></td>
+                                <td><%= issue.user_id %></td>
+                                <td><%= link_to 'Show', issue, class: "btn btn-primary navbar-btn" %></td>
+                                <td><%= link_to 'Edit', edit_issue_path(issue), class: "btn btn-primary navbar-btn" %></td>
+                                <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary navbar-btn" %></td>
+                            </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

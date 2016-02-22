@@ -1,2 +1,333 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+    background-color: #F7F7F7;
+    overflow-x: hidden;
+}
+.btn-primary{
+    background-color: #F84861 !important;
+    border-color: #FFF !important;
+}
+.btn-primary:hover{
+    color: #F84861 !important;
+    background-color: #FFF !important;
+    border-color: #F84861 !important;
+}
+.header_height{
+    height : 40px;
+}
+/***********HOME*************/
+.bg_home{
+    width:100%;
+    height: 100vh;
+    background-image: url(/images/bg/bg_home.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.verti{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title_home h1{
+    font-size: 2.4em;
+}
+.undertitle_home p{
+    font-size: 1.4em;
+}
+/*.arrow_bounce{
+    position: absolute;
+    top: 80%;
+    transform: translateY(80%);
+}*/
+.arrow{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+}
+#arrow_bounce {
+   -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-duration: 2s;
+   -webkit-animation-iteration-count: infinite;
+}
+/***********CONCEPT*************/
+/*.bg_1{
+	background-image: url(/images/bg/bg_1.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg_2{
+	background-image: url(/images/bg/bg_2.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg_3{
+	background-image: url(/images/bg/bg_home.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg_concept{
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.4);
+	padding: 0px;
+	margin: 0px;
+}*/
+.picto_concept{
+    padding: 20px 10px;
+}
+
+.size_glyph{
+    font-size: 1.5em;
+}
+
+img.img_user_post{
+    width: 60px;
+}
+img.img_post{
+width: 100%;
+}
+
+.height_min{
+    min-height: 80px;
+}
+.size_txt{
+    font-size: 12px;
+}
+
+/***********FOOTER*************/
+
+#mc_embed_signup{
+    background:transparent;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+}
+.footer{
+	background-color: #2e3238;
+	min-height: 250px;
+}
+.height_b{
+	height: 120px;
+}
+.size_pic{
+	font-size: 3em;
+}
+.txt_news{
+	font-size: 0.8em;
+	color: white;
+}
+.title_ul{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #f84861;
+}
+.width_5{
+    width: 15px;
+}
+.marge_5{
+    margin-left: 5px;
+}
+.border_left{
+    border-left: 1px solid rgba(0, 0, 0, 0.1);;
+}
+.none_li{
+	list-style-type: none;
+}
+#mc_embed_signup input.email{
+/*	background-color: rgba(46,49,58,0.6);*/
+    background-color: rgba(255,255,255,0.1);
+   border: none;
+   border-left: 1px solid rgba(255,255,255,0.1);
+   padding: 10px 5px;
+   margin-top: 1px;
+   color: #fff !important;
+   min-width:160px;
+}
+
+#mc-embedded-subscribe
+{    background-color: rgba(255,255,255,0.1);
+   border: none;
+   border-left: 1px solid rgba(255,255,255,0.1);
+   padding: 10px 5px;
+   margin-top: 1px;
+   color: #fff !important;
+   min-width:130px;
+}
+/***********NAVBAR*************/
+.container-fluid {
+    width: 90%;
+    margin: auto;
+}
+.navbar-inverse {
+    background-color:#2e3238;
+    color:white;
+}
+.navbar-brand img{
+    width: 50%
+}
+.navbar-text  {
+    padding: 0px 20px;
+}
+.navbar-text a{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+.navbar-btn {
+    background-color: #f84861;
+    color: #fff;
+    border: none;
+}
+.fa-facebook:hover{
+    color: #3B5998;
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    color:#3f729b;
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    color:#55acee;
+    cursor: pointer;
+}
+.fa-tumblr:hover{
+    color:#35465c;
+    cursor: pointer;
+}
+.navbar-text a:hover{
+    text-decoration: none;
+    color: white;
+}
+.navbar-inverse{
+    background-color:#2e3238;
+}
+.border_1{
+    border-bottom: 4px solid transparent;
+    transition:all 0.3s ease;
+}
+.border_1:hover{
+    border-bottom: 4px solid #fff;
+}
+/*********** COLOR *************/
+.white_c{
+    color: white;
+}
+.rose_c{
+    color: #f84861;
+}
+.grey_c{
+    color: #7e7e7e;
+}
+.grey_c_lege{
+    color: #7e7e7e;
+    opacity:0.4;
+}
+.black_c{
+    color: #2f3239;
+}
+/*********** BG COLOR *************/
+.rose{
+    background-color:#f84861 !important;
+}
+.red{
+    background-color: red;
+}
+.white_bg{
+    background-color: #ffffff;
+}
+.black{
+    border: rgba(255,255,255,0.1) solid 2px;
+}
+.black_bg{
+ background-color: #2f3239;
+}
+.grey_bg{
+    background-color: #F7F7F7;
+}
+.black_bg_dark{
+    background-color: #212328;
+}
+/***********BTN*************/
+.btn-lead{
+    background-color: #f84861;
+    height: 40px;
+    color: white;
+    transition: all 0.2s ease;
+}
+.btn-lead:hover{
+    background-color: white;
+    height: 40px;
+    color: #f84861;
+}
+.btn-lead p{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.btn-lead p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+.btn_see{
+    width: 140px;
+    height: 35px;
+    line-height: 25px;
+    border: 3px solid #ff7373;
+    color: #ff7373;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    transition:0.2s all ease;
+}
+.btn_see:hover{
+    width: 140px;
+    height: 35px;
+    line-height: 25px;
+    border: 3px solid #f84861;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #f84861;
+    font-weight: bold;
+}
+
+.btn_see_photo{
+    width: 190px;
+    height: 35px;
+    line-height: 25px;
+    border: 3px solid #ff7373;
+    color: #ff7373;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    transition:0.2s all ease;
+}
+.btn_see_photo:hover{
+    width: 190px;
+    height: 35px;
+    line-height: 25px;
+    border: 3px solid #f84861;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #f84861;
+    font-weight: bold;
+}
+.btn:hover{
+    color: #f84861;
+}
+
+a:visited {
+    color: #FFF;
+}
